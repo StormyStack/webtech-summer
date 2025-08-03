@@ -1,15 +1,11 @@
 function validateForm() {
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
+    var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var address = document.getElementById("address").value;
-    var city = document.getElementById("city").value;
-    var state = document.getElementById("state").value;
     var password = document.getElementById("password").value;
     var phone = document.getElementById("phone").value;
     var donation = document.querySelector('input[name="donation"]:checked');
 
-    if (fname === "" || email === "" || password === "" || donation === null|| phone === "" || lname === "" || address === "" || city === "" || state === "") {
+    if (name === "" || email === "" || password === "" || donation === null|| phone === "") {
         alert("All fields are required.");
         return false;
     }

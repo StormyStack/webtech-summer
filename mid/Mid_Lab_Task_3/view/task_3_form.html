@@ -10,26 +10,8 @@
     <body>
         <h1>Donor Information</h1>
         <form onsubmit="validateForm()">
-            <label>First Name</label>
-            <input type="text" id="fname"/>
-            <br>
-            <label>Last Name</label>
-            <input type="text" id="lname"/>
-            <br>
-            <label>Address</label>
-            <input type="text" id="address"/>
-            <br>
-            <label>City</label>
-            <input type="text" id="city"/>
-            <br>
-            <label>State</label>
-            <select name="state" id="state">
-                <option value="">Select a State</option>
-                <option value="Dhaka">Dhaka</option>
-                <option value="Chittagong">Chittagong</option>
-                <option value="Khulna">Khulna</option>
-                <option value="Rajshahi">Rajshahi</option>
-            </select>
+            <label>Name</label>
+            <input type="text" id="name"/>
             <br>
             <label>Phone</label>
             <input type="text" id="phone"/>
@@ -42,29 +24,20 @@
             <br>
             <label>Confirm Password</label>
             <input type="password" id="password"/>
+            <br>
+            <label>Donation Amount</label>
+            <input type="text" id="damount">
             <div class="donation">
-            <label>Donation Amount:</label>
-            <label><input type="radio" name="donation" value="500"> 500 BDT</label>
-            <label><input type="radio" name="donation" value="1000"> 1000 BDT</label>
-            <label><input type="radio" name="donation" value="2000"> 2000 BDT</label>
-            <label><input type="radio" name="donation" value="3000"> 3000 BDT</label>
-             <label><input type="radio" name="donation" value="Other"> Other</label>
+            <label>Payment method</label>
+            <label><input type="radio" name="donation" value="bkash">Bkash</label>
+            <label><input type="radio" name="donation" value="nagad">Nagad</label>
+            <label><input type="radio" name="donation" value="bank">Bank</label>
             </div>
-             <br>
-             <label>Other Amount</label>
-            <input type="text" id="otherAmount"/>
             <br>
-            <label><input type="checkbox" name="regularGiving"> I am interested in giving on a regular basis.</label>
+            <h3>Terms & condition</h3>
+            <input type="checkbox" name="terms">I read terms and condition<br>
             <br>
-            <h3>Additional Information</h3>
-            <input type="checkbox" name="annynomous">I want to remain anonymous<br>
-            <input type="checkbox" name="gift">My employer offers a matching gift program<br>
-            <input type="checkbox" name="latter">Please don't send thank you letters<br>
-            <br>
-            <label>Comments</label>
-            <textarea id="comments"></textarea>
             <input type="submit" value="Submit"/>
-            <input type="reset" value="Reset"/>
         </form>
     </body>
 </html>
