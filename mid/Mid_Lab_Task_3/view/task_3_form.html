@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Donation Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="../css/task_3_style.css">
+        <script src="../js/task_3_valid.js"></script>
+    </head>
+    <body>
+        <h1>Donor Information</h1>
+        <form onsubmit="validateForm()">
+            <label>First Name</label>
+            <input type="text" id="fname"/>
+            <br>
+            <label>Last Name</label>
+            <input type="text" id="lname"/>
+            <br>
+            <label>Address</label>
+            <input type="text" id="address"/>
+            <br>
+            <label>City</label>
+            <input type="text" id="city"/>
+            <br>
+            <label>State</label>
+            <select name="state" id="state">
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Rajshahi">Rajshahi</option>
+            </select>
+            <br>
+            <label>Phone</label>
+            <input type="text" id="phone"/>
+            <br>
+            <label>Email:</label>
+            <input type="text" id="email"/>
+            <br>
+            <label>Create Password(Min 8 characters)</label>
+            <input type="password" id="password"/>
+            <br>
+            <label>Confirm Password</label>
+            <input type="password" id="password"/>
+            <div class="donation">
+            <label>Donation Amount:</label>
+            <label><input type="radio" name="donation" value="500"> 500 BDT</label>
+            <label><input type="radio" name="donation" value="1000"> 1000 BDT</label>
+            <label><input type="radio" name="donation" value="2000"> 2000 BDT</label>
+            <label><input type="radio" name="donation" value="3000"> 3000 BDT</label>
+             <label><input type="radio" name="donation" value="Other"> Other</label>
+            </div>
+             <br>
+             <label>Other Amount</label>
+            <input type="text" id="otherAmount"/>
+            <br>
+            <label><input type="checkbox" name="regularGiving"> I am interested in giving on a regular basis.</label>
+            <br>
+            <h3>Additional Information</h3>
+            <input type="checkbox" name="annynomous">I want to remain anonymous<br>
+            <input type="checkbox" name="gift"> I want to make this donation as a gift<br>
+            <br>
+            <label>Comments</label>
+            <textarea id="comments"></textarea>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </body>
+</html>

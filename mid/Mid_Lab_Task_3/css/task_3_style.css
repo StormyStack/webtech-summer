@@ -1,0 +1,34 @@
+h3{
+    color: red;
+    font-weight: bold;
+}
+h1 {
+    color: red;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+form {
+    max-width: 600px;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+input[type="text"],
+input[type=password],
+input[type=email],
+input[type=number],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+.donation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
