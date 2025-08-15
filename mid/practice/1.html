@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation</title>
+    </head>
+    <body>
+        <form onsubmit="return validateForm();">
+           <label>First Name: </label>
+           <input type="text" id="fname"/>
+           <label>Last Name: </label>
+           <input type="text" id="lname"/>
+           <input type="submit" value="submit">
+        </form>
+    </body>
+    <script>
+        function validateForm(){
+         let fname = document.getElementById("fname").value;
+         let lname = document.getElementById("lname").value;
+         if (fname ==="" || lname ==="") {
+            alert("Fill all field");
+            return false;
+         }
+         if (fname.length<2|| lname.length<2) {
+            alert("At least 2 character each field");
+            return false;
+         }
+         else
+         alert("submission successful");
+        return true;
+        }
+    </script>
+</html>
